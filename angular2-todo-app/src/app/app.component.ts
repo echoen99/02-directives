@@ -15,4 +15,5 @@ export class AppComponent {
   changeColor() {
     this.yosiColor= this.yosiColor==='blue' ? 'red' : 'blue';
   }
+
 }
