@@ -12,7 +12,7 @@ export class TodoComponent implements OnInit {
   complete = false;
   num = 0;
 
-  //constructor() { }
+  constructor() { }
 /*
   constructor(values: Object = {}) {
     Object.assign(this, values);

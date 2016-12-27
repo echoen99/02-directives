@@ -1,12 +1,19 @@
-<h1>
-  {{title}}
-  <div [style.color]="yosiColor">
-    Hello {{name}}
-  </div>
-  <input type="text"  [value]="name" (keyup.enter)="name=$event.target.value">
+<h1>{{title}}</h1>
+<div [style.color]="yosiColor">
+	Hello {{name}}
+</div>
+<input type="text" [value]="name" (keyup.enter)="name=$event.target.value">
 
-  <input type="text"  [(ngModel)]="name">
+<input type="text" [(ngModel)]="name">
 
-  <button (click)="changeColor()">Click On Me</button>
-  <app-todo></app-todo>
-</h1>
+<button (click)="changeColor()">Click On Me</button>
+
+<br/>
+<ul>
+	<li *ngFor="let c of customers">
+    <app-customer [customer]="c"></app-customer>
+   </li>
+</ul>
+
+
+<app-todo></app-todo>
