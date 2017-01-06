@@ -1,0 +1,11 @@
+<p>
+  cmp-a works!
+</p>
+<button (click)="onClick()">Click Me</button>
+<div *ngIf="items.length>2">
+  <div *ngFor="let item of items">{{item}}</div>
+</div>
+<div>
+  <input type="text" #input>
+  <button (click)="onSend(input.value)">Send</button>
+</div>

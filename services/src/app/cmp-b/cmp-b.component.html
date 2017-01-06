@@ -1,0 +1,13 @@
+<p>
+  cmp-b works!
+</p>
+<button (click)="onClick()">Click Me</button>
+<div *ngIf="items.length<8">
+  <div *ngFor="let item of items">{{item}}</div>
+</div>
+<div>
+  <button (click)="onPop()">Pop out</button>
+  <div>{{popedItem}}</div>
+</div>
+<br><br>
+<h2>{{value}}</h2>
